@@ -1,0 +1,86 @@
+/* O conteúdo dentro de main irá ocupar 100% da largura */
+body{
+    text-align: center!important;
+}
+header {
+  position: fixed;
+  width: 100%;
+}
+main {
+  min-height: auto;
+  min-width: 100vh; /* Isso garante que main ocupe toda a altura da viewport */
+}
+
+.container-bg {
+  background-image: url("img/Design\ sem\ nome\ \(6\).png");
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  transition: 0.5s;
+}
+/* Rodape */
+.footer {
+    width: 100%;
+    height: 200px;
+    background: #000000;
+    padding: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0px 10px 0px 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
